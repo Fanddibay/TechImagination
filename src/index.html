@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Imagination</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="icon" href="assets/Logo.ico" type="image/png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="container px-8">
+        <div class="flex justify-between py-2 items-center">
+          <!-- Logo Nav Img -->
+          <img src="assets/text_logo.png" width="316px" alt="" />
+          <div class="text-center">
+            <ul class="no-underline flex gap-12">
+              <li><a href="#services">Services</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#aboutUs">About Us</a></li>
+              <li><a href="#contactUs">Contact Us</a></li>
+            </ul>
+          </div>
+          <a href="#" class="btn-rounded-2">Get Started</a>
+        </div>
+      </div>
+    </nav>
+    <!-- end Navbar -->
+
+    <!-- Hero -->
+    <section id="hero">
+      <div class="relative w-full overflow-hidden" id="carousel">
+        <div class="carousel-item visible relative">
+          <img src="assets/Hero1.png" alt="Image 1" class="w-full h-[80vh]" />
+          <div class="absolute inset-0">
+            <div class="container text-white ps-[150px] pt-[150px]">
+              <div class="mb-12">
+                <h1 class="text-6xl font-bold mb-4">
+                  Creative Digital <br />
+                  Marketing Agency
+                </h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  <br />
+                  diam nonumy eirmod tempor Lorem ipsum dolor sit amet
+                  consetetur
+                  <br />
+                  sadipscing elitr
+                </p>
+              </div>
+              <a href="#" class="btn-rounded-1">Contact Us</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item hidden relative">
+          <img src="assets/hero-2.png" alt="Image 2" class="w-full h-[80vh]" />
+          <div class="absolute inset-0">
+            <div class="container text-white text-center pt-[150px]">
+              <div class="mb-12">
+                <h1 class="text-6xl font-bold mb-4">
+                  Creative Digital <br />
+                  Marketing Agency
+                </h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  <br />
+                  diam nonumy eirmod tempor Lorem ipsum dolor sit amet
+                  consetetur
+                  <br />
+                  sadipscing elitr
+                </p>
+              </div>
+              <a href="#" class="btn-rounded-1">Contact Us</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item hidden relative">
+          <img src="assets/hero-3.png" alt="Image 3" class="w-full h-[80vh]" />
+          <div class="absolute inset-0">
+            <div class="container text-white text-end pr-[150px] pt-[150px]">
+              <div class="mb-12">
+                <h1 class="text-6xl font-bold mb-4">
+                  Creative Digital <br />
+                  Marketing Agency
+                </h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  <br />
+                  diam nonumy eirmod tempor Lorem ipsum dolor sit amet
+                  consetetur
+                  <br />
+                  sadipscing elitr
+                </p>
+              </div>
+              <a href="#" class="btn-rounded-1">Contact Us</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <div
+          class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2"
+        >
+          <button class="pagination-dot bg-white rounded-full w-3 h-3"></button>
+          <button
+            class="pagination-dot bg-white rounded-full w-3 h-3 opacity-50"
+          ></button>
+          <button
+            class="pagination-dot bg-white rounded-full w-3 h-3 opacity-50"
+          ></button>
+        </div>
+      </div>
+    </section>
+    <!-- end Hero -->
+    <main>
+      <!-- Our Client -->
+      <section id="ourClient">
+        <div class="container py-9 bg-background-img">
+          <div class="justify-center">
+            <div>
+              <div class="text-center mb-8">
+                <h5 class="fw-bold text-4xl font-bold">Our Clients</h5>
+                <p class="text-text-color text-base font-light">
+                  We have been working with some Fortune 500+ clients
+                </p>
+              </div>
+              <marquee direction="right">
+                <div class="block md:flex gap-12">
+                  <img src="assets/client1.svg" alt="" />
+                  <img src="assets/client2.svg" alt="" />
+                  <img src="assets/client3.svg" alt="" />
+                  <img src="assets/client4.svg" alt="" />
+                  <img src="assets/client5.svg" alt="" />
+                  <img src="assets/client6.svg" alt="" />
+                  <img src="assets/client7.svg" alt="" />
+                  <img src="assets/client2.svg" alt="" />
+                </div>
+              </marquee>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end Our Client -->
+
+      <!-- Services -->
+      <section id="services">
+        <div class="container justify-center py-12">
+          <div class="text-center">
+            <h5 class="fw-bold text-4xl font-bold">Services</h5>
+            <p class="text-text-color text-base font-light">
+              Lorem ipsum dolor sit amet, consetetur sadipscing <br />
+              elitr, sed diam nonumy eirmod tempor
+            </p>
+          </div>
+          <div class="block md:flex row-span-3 gap-8 px-8 my-8">
+            <div class="card-services">
+              <div class="pb-2">
+                <div class="block md:flex gap-4 items-center mb-4">
+                  <img
+                    src="assets/Digital_DD.svg"
+                    width="50px"
+                    alt="digital development service"
+                  />
+                  <span class="font-bold text-base"
+                    >Digital Development Design</span
+                  >
+                </div>
+                <p class="text-text-color font-base">
+                  This category would group tasks related to the creation and
+                  design of digital platforms, ensuring they are functional and
+                  attractive.
+                </p>
+              </div>
+              <hr />
+              <div class="text-start py-3 ps-4 hidden" id="showCards">
+                <ul class="list-disc grid gap-y-4">
+                  <li>Custom Web Developer</li>
+                  <li>Responsive Design</li>
+                  <li>Mobile App Development</li>
+                  <li>Content Management SYstems</li>
+                  <li>User Experience Optimization</li>
+                  <li>Augemented and Virtual Reality</li>
+                </ul>
+              </div>
+              <div class="text-end mt-4">
+                <button class="btn-outline" id="showBtn">
+                  Show <span id="btnMore">More</span>
+                  <span id="btnLess" class="hidden">Less</span>
+                </button>
+              </div>
+            </div>
+            <div class="card-services">
+              <div class="pb-2">
+                <div class="block md:flex gap-4 items-center mb-4">
+                  <img
+                    src="assets/Digital_MS.png"
+                    width="50px"
+                    alt="digital development service"
+                  />
+                  <span class="font-bold text-base"
+                    >Digital Marketing and Strategy</span
+                  >
+                </div>
+                <p class="text-text-color font-base">
+                  This category would include tasks focused on promotion,
+                  visibility, and digital strategy to attract and retain an
+                  audience.
+                </p>
+              </div>
+              <hr />
+              <div class="text-start py-3 ps-4 hidden" id="showCards1">
+                <ul class="list-disc grid gap-y-4">
+                  <li>Search Engine Optimization (SEO)</li>
+                  <li>Content Marketing</li>
+                  <li>Social Media Management</li>
+                  <li>Digital Branding Strategies</li>
+                  <li>Email Marketing</li>
+                  <li>Web Analytics and Reporting</li>
+                  <li>Digital Transformation Consulting</li>
+                </ul>
+              </div>
+              <div class="text-end mt-4">
+                <button class="btn-outline" id="showBtn1">
+                  Show <span id="btnMore1">More</span>
+                  <span id="btnLess1" class="hidden">Less</span>
+                </button>
+              </div>
+            </div>
+            <div class="card-services">
+              <div class="pb-2">
+                <div class="block md:flex gap-4 items-center mb-4">
+                  <img
+                    src="assets/Technology_OS.svg"
+                    width="50px"
+                    alt="digital development service"
+                  />
+                  <span class="font-bold text-base"
+                    >Technological and Operational Solutions</span
+                  >
+                </div>
+                <p class="text-text-color font-base">
+                  This category would focus on the technical and infrastructure
+                  solutions necessary for the efficient and secure operation of
+                  digital platforms.
+                </p>
+              </div>
+              <hr />
+              <div class="text-start py-3 ps-4 hidden" id="showCards2">
+                <ul class="list-disc grid gap-y-4">
+                  <li>Web Hosting and Maintenance</li>
+                  <li>Web Security</li>
+                  <li>Systems and API Integration</li>
+                  <li>Custom Software Development</li>
+                  <li>E-commerce Solutions</li>
+                  <li>Digital Training and Education</li>
+                </ul>
+              </div>
+              <div class="text-end mt-4">
+                <button class="btn-outline" id="showBtn2">
+                  Show <span id="btnMore2">More</span>
+                  <span id="btnLess2" class="hidden">Less</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="justify-center text-center my-12">
+            <button class="btn-rounded-1">Get Started</button>
+          </div>
+        </div>
+      </section>
+      <!-- end Services -->
+
+      <!-- About Us -->
+      <section id="aboutUs">
+        <div class="bg-background-img py-12">
+          <div class="container px-12">
+            <div class="text-center">
+              <span class="text-deep-blue text-lg font-medium">About Us</span>
+              <h5 class="font-bold text-4xl mt-2">Our Teamate</h5>
+            </div>
+            <div class="grid grid-cols-12 gap-12 py-14">
+              <div class="col-span-5 pt-10">
+                <div class="grid gap-y-4">
+                  <div>
+                    <h5 class="text-2xl font-bold">Mission</h5>
+                    <p class="text-text-color font-light text-sm">
+                      We move with make a Creative Strategy for help your
+                      business goal, we help to improve your income by a
+                      services we have.
+                    </p>
+                  </div>
+                  <div>
+                    <h5 class="text-2xl font-bold">Vision</h5>
+                    <p class="text-text-color font-light text-sm">
+                      We move with make a Creative Strategy for help your
+                      business goal, we help to improve your income by a
+                      services we have.
+                    </p>
+                  </div>
+                  <div>
+                    <h5 class="text-2xl font-bold">Compromisos</h5>
+                    <p class="text-text-color font-light text-sm">
+                      We move with make a Creative Strategy for help your
+                      business goal, we help to improve your income by a
+                      services we have.
+                    </p>
+                  </div>
+                  <div class="block md:flex gap-6 mt-4">
+                    <button class="btn-rounded-1">About Us</button>
+                    <button class="btn-outline-2 flex items-center gap-2">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g id="play-circle">
+                          <path
+                            id="Vector"
+                            d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                            stroke="#E63946"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="hover:stroke-white"
+                          />
+                          <path
+                            id="Vector_2"
+                            d="M10 8L16 12L10 16V8Z"
+                            stroke="#E63946"
+                            class="hover:stroke-white"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                      </svg>
+                      <span> Our Story</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-span-7">
+                <div class="container mx-auto">
+                  <div class="carousel">
+                    <div class="relative w-full">
+                      <img
+                        src="assets/TonyImg.png"
+                        alt="Image 1"
+                        class="rounded-lg border border-gray-300 bg-white w-full h-auto"
+                      />
+                      <div
+                        class="absolute bottom-0 w-full h-1/3 bg-black bg-opacity-80 rounded-b-lg flex flex-col items-start justify-center text-white p-4"
+                      >
+                        <h2 class="text-xl font-bold">Tony</h2>
+                        <p class="text-sm font-light mb-4">
+                          tony@techimagination.com
+                        </p>
+                        <p class="text-base text-red-500">Web Developer</p>
+                      </div>
+                    </div>
+                    <div class="relative w-full">
+                      <img
+                        src="assets/MadsImg.png"
+                        alt="Image 1"
+                        class="rounded-lg border border-gray-300 bg-white w-full h-auto"
+                      />
+                      <div
+                        class="absolute bottom-0 w-full h-1/3 bg-black bg-opacity-80 rounded-b-lg flex flex-col items-start justify-center text-white p-4"
+                      >
+                        <h2 class="text-xl font-bold">Mads</h2>
+                        <p class="text-sm font-light mb-4">
+                          mads@Techimagination.com
+                        </p>
+                        <p class="text-base text-red-500">Digital Marketing</p>
+                      </div>
+                    </div>
+                    <div class="relative w-full">
+                      <img
+                        src="assets/JobsImg.png"
+                        alt="Image 1"
+                        class="rounded-lg border border-gray-300 bg-white w-full h-auto"
+                      />
+                      <div
+                        class="absolute bottom-0 w-full h-1/3 bg-black bg-opacity-80 rounded-b-lg flex flex-col items-start justify-center text-white p-4"
+                      >
+                        <h2 class="text-xl font-bold">Tony</h2>
+                        <p class="text-sm font-light mb-4">
+                          jobs@techimagination.com
+                        </p>
+                        <p class="text-base text-red-500">SEO Specialist</p>
+                      </div>
+                    </div>
+                    <div class="relative w-full">
+                      <img
+                        src="assets/RoberImg.png"
+                        alt="Image 1"
+                        class="rounded-lg border border-gray-300 bg-white w-full h-auto"
+                      />
+                      <div
+                        class="absolute bottom-0 w-full h-1/3 bg-black bg-opacity-80 rounded-b-lg flex flex-col items-start justify-center text-white p-4"
+                      >
+                        <h2 class="text-xl font-bold">Robert</h2>
+                        <p class="text-sm font-light mb-4">
+                          robert@techimagination.com
+                        </p>
+                        <p class="text-base text-red-500">UI/UX Designer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end About Us -->
+
+      <!-- Contact Us -->
+      <section id="contactUs">
+        <div class="container py-12">
+          <div class="text-center">
+            <h5 class="font-bold text-4xl mb-2">Contact Us</h5>
+            <p class="text-text-color font-light text-sm">
+              We are ready to work on a project of any complexity <br />,
+              whether it’s commercial or residential.
+            </p>
+          </div>
+          <div class="container">
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 md:px-48">
+              <!-- Full Name -->
+              <div class="flex flex-col">
+                <label for="fullName" class="text-gray-700 font-semibold mb-2"
+                  >Full Name *</label
+                >
+                <input
+                  id="fullName"
+                  type="text"
+                  required
+                  class="rounded-lg border border-gray-300 bg-white w-full h-12 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+
+              <!-- Your Email -->
+              <div class="flex flex-col">
+                <label for="email" class="text-gray-700 font-semibold mb-2"
+                  >Your Email *</label
+                >
+                <input
+                  id="email"
+                  type="email"
+                  required
+                  class="rounded-lg border border-gray-300 bg-white w-full h-12 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+
+              <!-- Phone -->
+              <div class="flex flex-col">
+                <label for="phone" class="text-gray-700 font-semibold mb-2"
+                  >Phone *</label
+                >
+                <input
+                  id="phone"
+                  type="tel"
+                  required
+                  class="rounded-lg border border-gray-300 bg-white w-full h-12 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+
+              <!-- Subject -->
+              <div class="flex flex-col">
+                <label for="subject" class="text-gray-700 font-semibold mb-2"
+                  >Subject *</label
+                >
+                <input
+                  id="subject"
+                  type="text"
+                  required
+                  class="rounded-lg border border-gray-300 bg-white w-full h-12 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+
+              <!-- Message -->
+              <div class="col-span-1 md:col-span-2 flex flex-col">
+                <label for="message" class="text-gray-700 font-semibold mb-2"
+                  >Message *</label
+                >
+                <textarea
+                  id="message"
+                  required
+                  class="rounded-lg border border-gray-300 bg-white w-full h-32 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                ></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="col-span-1 md:col-span-2 flex justify-center">
+                <button
+                  type="submit"
+                  class="bg-red-custom-100 text-white rounded-lg px-6 py-2 font-semibold hover:bg-red-custom-200 focus:outline-none focus:ring-2 focus:ring-red-500"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- end Contact Us -->
+
+      <!-- Get Started -->
+      <section id="getStarted">
+        <div class="container bg-background-img">
+          <div class="block md:flex gap-24 items-center justify-between">
+            <div class="ps-24">
+              <h5 class="mb-3 font-bold text-4xl">Grow Your Business</h5>
+              <p class="mb-8 text-light font-base text-text-color">
+                Track your customers behavior to make a good decision <br />
+                that helps the customer use our services better way.
+              </p>
+              <a href="#" class="btn-rounded-1">Get Started</a>
+            </div>
+            <div>
+              <img
+                src="assets/GrowImg.png"
+                class="right-0"
+                alt="grow business"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end Get Started -->
+    </main>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="bg-deep-blue container pt-12">
+        <div class="grid grid-cols-12 gap-16 text-white justify-between">
+          <div class="col-span-6 ps-24">
+            <ul class="grid gap-y-3">
+              <li>
+                <img
+                  src="assets/text_logo.png"
+                  class="mb-4"
+                  width="316px"
+                  alt="Logo"
+                />
+              </li>
+              <li class="flex gap-4">
+                <span>Address :</span> <a href="#">Sand Pedro, Chilie, 15262</a>
+              </li>
+              <li class="flex gap-4">
+                <span>Phone :</span><a href="#">+84 1102 2703</a>
+              </li>
+              <li class="flex gap-4">
+                <span>Email :</span><a href="#">hello@TechImagination.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-span-6">
+            <form action="#">
+              <label for="emails">NEWSLETTER :</label>
+              <div class="block md:flex gap-4 mt-2">
+                <input
+                  type="text"
+                  height="50px"
+                  class="p-4 rounded-lg w-[320px]"
+                  placeholder="Your email here"
+                />
+                <button type="submit" class="btn-rounded-1">Subscribe</button>
+              </div>
+            </form>
+            <div class="mt-6">
+              <span>SOCIAL</span>
+              <ul class="block md:flex gap-6 mt-4">
+                <li>
+                  <a href="#"><img src="assets/Facebook.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="assets/LinkedIn.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="assets/Twitter.svg" alt="" /></a>
+                </li>
+
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="border-t-2 mt-16 border-white text-center">
+          <p class="text-white py-4">
+            Tech Imagination Company © 2024. All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- end Footer -->
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+    <!-- settings carousel teamate here! -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".carousel").slick({
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: true,
+          arrows: true,
+          autoplay: true,
+          autoplaySpeed: 3000,
+        });
+      });
+    </script>
+  </body>
+</html>

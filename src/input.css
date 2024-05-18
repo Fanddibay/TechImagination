@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-rounded-1 {
+    @apply bg-red-custom-100 px-8 py-4 rounded-md text-white  hover:border-white hover:bg-red-custom-200;
+  }
+
+  .btn-rounded-2 {
+    @apply bg-red-custom-100 px-8 py-3 rounded-full text-white hover:bg-transparent hover:border-solid border-2 hover:border-red-custom-100 hover:text-red-custom-100;
+  }
+
+  .btn-outline {
+    @apply border-2 border-red-custom-100 text-red-custom-100 rounded-lg hover:bg-red-custom-100 hover:border-white hover:text-white px-4 py-2;
+  }
+
+  .btn-outline-2 {
+    @apply border-red-custom-100 px-8 py-3 rounded-full text-red-custom-100 hover:bg-red-custom-100 hover:border-solid border-2 hover:border-white hover:text-white;
+  }
+
+  .card-services {
+    @apply shadow-md p-8 border-2 border-solid border-gray-200 rounded-md h-full;
+  }
+}
+
+nav ul li {
+  @apply hover:text-red-custom-100 hover:underline;
+}
+
+.btn-outline-2:hover path {
+  stroke: #fff !important;
+}
+
+body {
+  font-family: "Accord Alternate Bold", sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.carousel-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 100%;
+  opacity: 0;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.carousel-item.visible {
+  left: 0;
+  opacity: 1;
+  transform: translateX(0);
+  position: relative;
+}
+
+.carousel-item.hidden {
+  left: -100%;
+  opacity: 0;
+  transform: translateX(0);
+}
+
+.carousel-item.next {
+  left: 100%;
+  opacity: 0;
+  transform: translateX(0);
+}
+
+.carousel-slide {
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.carousel-slide.previous {
+  transform: translateX(-100%);
+}
+
+.carousel-slide.next {
+  transform: translateX(100%);
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: red !important;
+}
+.slick-prev,
+.slick-next {
+  background-color: white !important;
+  z-index: 100 !important;
+  border-radius: 9999px !important; /* Fully rounded */
+  width: 40px !important;
+  height: 40px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  @apply shadow-sm;
+}
