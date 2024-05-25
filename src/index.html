@@ -23,43 +23,110 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav>
-      <div class="container px-8">
-        <div class="flex justify-between py-2 items-center">
-          <!-- Logo Nav Img -->
-          <img src="assets/text_logo.png" width="316px" alt="" />
-          <div class="text-center">
-            <ul class="no-underline flex gap-12">
-              <li><a href="#services">Services</a></li>
-              <li><a href="#">Testimonials</a></li>
-              <li><a href="#aboutUs">About Us</a></li>
-              <li><a href="#contactUs">Contact Us</a></li>
-            </ul>
-          </div>
-          <a href="#" class="btn-rounded-2">Get Started</a>
+    <nav id="navbar" class="fixed-top">
+      <div
+        class="container bg-white w-full shadow-md md:shadow-none px-4 sm:px-12 flex justify-between items-center"
+      >
+        <a href="#"> <img src="assets/logo.png" width="90px" alt="Logo" /></a>
+        <div class="block lg:hidden">
+          <button id="hamburger" class="text-dark-blue focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
         </div>
+        <ul class="nav hidden lg:flex gap-8 text-black">
+          <li>
+            <a href="#services" class="hover:text-red-custom-100">Services</a>
+          </li>
+          <li>
+            <a href="#testimonial" class="hover:text-red-custom-100"
+              >Testmonials</a
+            >
+          </li>
+          <li>
+            <a href="#aboutUs" class="hover:text-red-custom-100">About Us</a>
+          </li>
+          <li>
+            <a href="#contactUs" class="hover:text-red-custom-100"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+        <a
+          href="#login"
+          class="hidden lg:block bg-red-custom-100 font-bold text-white px-12 py-2.5 rounded-full hover:bg-red-500"
+          >Login</a
+        >
+      </div>
+      <div
+        id="menu"
+        class="nav-menu lg:hidden overflow-hidden bg-white shadow-md"
+      >
+        <ul class="flex flex-col items-center py-4 text-text-color-1">
+          <li class="py-2">
+            <a href="#services" class="hover:text-red-custom-100">Services</a>
+          </li>
+          <li class="py-2">
+            <a href="#testimonial" class="hover:text-red-custom-100"
+              >Testmonials</a
+            >
+          </li>
+          <li class="py-2">
+            <a href="#aboutUs" class="hover:text-red-custom-100">About Us</a>
+          </li>
+          <li class="py-2">
+            <a href="#contactUs" class="hover:text-red-custom-100"
+              >Contact Us</a
+            >
+          </li>
+          <li class="py-2">
+            <a
+              href="#login"
+              class="bg-red-custom-100 font-bold text-white px-12 py-2.5 rounded-full hover:bg-purple-500"
+              >Login</a
+            >
+          </li>
+        </ul>
       </div>
     </nav>
     <!-- end Navbar -->
 
     <!-- Hero -->
     <section id="hero">
-      <div class="relative w-full overflow-hidden" id="carousel">
+      <div class="relative w-full overflow-hidden pt-8 md:pt-16" id="carousel">
         <div class="carousel-item visible relative">
-          <img src="assets/Hero1.png" alt="Image 1" class="w-full h-[80vh]" />
+          <img
+            src="assets/Hero1.png"
+            alt="Image 1"
+            class="w-full h-[60vh] md:h-[80vh]"
+          />
           <div class="absolute inset-0">
-            <div class="container text-white ps-[150px] pt-[150px]">
+            <div
+              class="container text-white md:ps-[150px] md:pt-[150px] pt-32 ps-4"
+            >
               <div class="mb-12">
-                <h1 class="text-6xl font-bold mb-4">
+                <h1 class="text-3xl md:text-6xl font-bold mb-4">
                   Creative Digital <br />
                   Marketing Agency
                 </h1>
                 <p>
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  <br />
+                  <br class="hidden md:block" />
                   diam nonumy eirmod tempor Lorem ipsum dolor sit amet
                   consetetur
-                  <br />
+                  <br class="hidden md:block" />
                   sadipscing elitr
                 </p>
               </div>
@@ -68,20 +135,24 @@
           </div>
         </div>
         <div class="carousel-item hidden relative">
-          <img src="assets/hero-2.png" alt="Image 2" class="w-full h-[80vh]" />
+          <img
+            src="assets/hero-2.png"
+            alt="Image 2"
+            class="w-full h-[60vh] md:h-[80vh]"
+          />
           <div class="absolute inset-0">
             <div class="container text-white text-center pt-[150px]">
               <div class="mb-12">
-                <h1 class="text-6xl font-bold mb-4">
+                <h1 class="text-3xl md:text-6xl font-bold mb-4">
                   Creative Digital <br />
                   Marketing Agency
                 </h1>
                 <p>
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  <br />
+                  <br class="hidden md:block" />
                   diam nonumy eirmod tempor Lorem ipsum dolor sit amet
                   consetetur
-                  <br />
+                  <br class="hidden md:block" />
                   sadipscing elitr
                 </p>
               </div>
@@ -90,20 +161,26 @@
           </div>
         </div>
         <div class="carousel-item hidden relative">
-          <img src="assets/hero-3.png" alt="Image 3" class="w-full h-[80vh]" />
+          <img
+            src="assets/hero-3.png"
+            alt="Image 3"
+            class="w-full h-[60vh] md:h-[80vh]"
+          />
           <div class="absolute inset-0">
-            <div class="container text-white text-end pr-[150px] pt-[150px]">
+            <div
+              class="container text-white text-end md:pr-[150px] md:pt-[150px] pt-32 pr-6"
+            >
               <div class="mb-12">
-                <h1 class="text-6xl font-bold mb-4">
+                <h1 class="text-3xl md:text-6xl font-bold mb-4">
                   Creative Digital <br />
                   Marketing Agency
                 </h1>
                 <p>
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  <br />
+                  <br class="hidden md:block" />
                   diam nonumy eirmod tempor Lorem ipsum dolor sit amet
                   consetetur
-                  <br />
+                  <br class="hidden md:block" />
                   sadipscing elitr
                 </p>
               </div>
@@ -133,14 +210,14 @@
         <div class="container py-9 bg-background-img">
           <div class="justify-center">
             <div>
-              <div class="text-center mb-8">
+              <div class="text-center mb-8 px-6 md:px-0">
                 <h5 class="fw-bold text-4xl font-bold">Our Clients</h5>
                 <p class="text-text-color text-base font-light">
                   We have been working with some Fortune 500+ clients
                 </p>
               </div>
               <marquee direction="right">
-                <div class="block md:flex gap-12">
+                <div class="flex gap-12">
                   <img src="assets/client1.svg" alt="" />
                   <img src="assets/client2.svg" alt="" />
                   <img src="assets/client3.svg" alt="" />
@@ -167,7 +244,7 @@
               elitr, sed diam nonumy eirmod tempor
             </p>
           </div>
-          <div class="block md:flex row-span-3 gap-8 px-8 my-8">
+          <div class="grid gap-y-6 md:flex row-span-3 gap-8 px-8 my-8">
             <div class="card-services">
               <div class="pb-2">
                 <div class="block md:flex gap-4 items-center mb-4">
@@ -288,13 +365,13 @@
       <!-- About Us -->
       <section id="aboutUs">
         <div class="bg-background-img py-12">
-          <div class="container px-12">
+          <div class="container px-4 md:px-12">
             <div class="text-center">
               <span class="text-deep-blue text-lg font-medium">About Us</span>
               <h5 class="font-bold text-4xl mt-2">Our Teamate</h5>
             </div>
-            <div class="grid grid-cols-12 gap-12 py-14">
-              <div class="col-span-5 pt-10">
+            <div class="grid grid-cols-1 md:grid-cols-12 md:gap-12 py-14">
+              <div class="md:col-span-5 pt-0 md:pt-10">
                 <div class="grid gap-y-4">
                   <div>
                     <h5 class="text-2xl font-bold">Mission</h5>
@@ -320,7 +397,7 @@
                       services we have.
                     </p>
                   </div>
-                  <div class="block md:flex gap-6 mt-4">
+                  <div class="flex gap-6 my-4">
                     <button class="btn-rounded-1">About Us</button>
                     <button class="btn-outline-2 flex items-center gap-2">
                       <svg
@@ -356,8 +433,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-span-7">
-                <div class="container mx-auto">
+              <div class="md:col-span-7">
+                <div class="container md:mx-auto">
                   <div class="carousel">
                     <div class="relative w-full">
                       <img
@@ -525,9 +602,9 @@
 
       <!-- Get Started -->
       <section id="getStarted">
-        <div class="container bg-background-img">
+        <div class="container bg-background-img px-4 md:px-0">
           <div class="block md:flex gap-24 items-center justify-between">
-            <div class="ps-24">
+            <div class="md:ps-24">
               <h5 class="mb-3 font-bold text-4xl">Grow Your Business</h5>
               <p class="mb-8 text-light font-base text-text-color">
                 Track your customers behavior to make a good decision <br />
@@ -538,7 +615,7 @@
             <div>
               <img
                 src="assets/GrowImg.png"
-                class="right-0"
+                class="right-0 mt-12 md:mt-0"
                 alt="grow business"
               />
             </div>
@@ -550,8 +627,10 @@
     <!-- Footer -->
     <footer id="footer">
       <div class="bg-deep-blue container pt-12">
-        <div class="grid grid-cols-12 gap-16 text-white justify-between">
-          <div class="col-span-6 ps-24">
+        <div
+          class="grid grid-cols-1 md:grid-cols-12 gap-16 text-white justify-between px-6 md:px-0"
+        >
+          <div class="col-span-6 md:ps-24">
             <ul class="grid gap-y-3">
               <li>
                 <img
@@ -573,13 +652,13 @@
             </ul>
           </div>
           <div class="col-span-6">
-            <form action="#">
+            <form action="#" class="">
               <label for="emails">NEWSLETTER :</label>
-              <div class="block md:flex gap-4 mt-2">
+              <div class="grid gap-y-4 md:flex gap-4 mt-2">
                 <input
                   type="text"
                   height="50px"
-                  class="p-4 rounded-lg w-[320px]"
+                  class="p-4 rounded-lg md:w-[320px]"
                   placeholder="Your email here"
                 />
                 <button type="submit" class="btn-rounded-1">Subscribe</button>
@@ -587,7 +666,7 @@
             </form>
             <div class="mt-6">
               <span>SOCIAL</span>
-              <ul class="block md:flex gap-6 mt-4">
+              <ul class="flex gap-6 mt-4">
                 <li>
                   <a href="#"><img src="assets/Facebook.svg" alt="" /></a>
                 </li>
@@ -605,7 +684,7 @@
           </div>
         </div>
         <div class="border-t-2 mt-16 border-white text-center">
-          <p class="text-white py-4">
+          <p class="text-white py-4 text-sm md:text-base">
             Tech Imagination Company © 2024. All Rights Reserved
           </p>
         </div>
@@ -629,8 +708,24 @@
           arrows: true,
           autoplay: true,
           autoplaySpeed: 3000,
+          responsive: [
+            {
+              breakpoint: 768, // You can adjust this breakpoint as needed
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
         });
       });
+
+      document
+        .getElementById("hamburger")
+        .addEventListener("click", function () {
+          var menu = document.getElementById("menu");
+          menu.classList.toggle("open");
+        });
     </script>
   </body>
 </html>

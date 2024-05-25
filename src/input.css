@@ -34,6 +34,8 @@ nav ul li {
 
 body {
   font-family: "Accord Alternate Bold", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 * {
@@ -107,5 +109,37 @@ body {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  @apply shadow-sm;
+  @apply shadow-sm hidden md:mx-0 mx-[12px];
+}
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 24px;
+}
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+}
+.nav-menu {
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+}
+.nav-menu.open {
+  max-height: 500px; /* Adjust as needed */
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 50;
 }
